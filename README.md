@@ -15,15 +15,11 @@
    (4) CodeGenerateEvaluate_Parallel.py: The script used to employ the CG-LLMs to generate code for each problem, and submit the code to Luogu platform for evaluation.
    (5) data_statics.py: The script used to statistically analyze the evaluation results and provide the statistics data.
 3. Experiments: The experimental results of this paper
-   (1) result: the evaluation results of 5 CG-LLMs based on problem set "selected_problems_C" , including folders generated_code and results.
-    1) generated_code: the generated code of each model
-    2) results: the evaluation results of the benchmark
-   (2) result_no_io: the evaluation results of 5 CG-LLMs based on problem set "selected_problems_C_no_io" , including folders generated_code and results.
-    1) generated_code: the generated code of each model
-    2) results: the evaluation results of the benchmark
+   (1) result: the evaluation results of 5 CG-LLMs based on problem set "selected_problems_C"
+   (2) result_no_io: the evaluation results of 5 CG-LLMs based on problem set "selected_problems_C_no_io"
    (3) statics: the statistic data of the evaluation results based on problem set "selected_problems_C".    
    (4) statics_no_io: the statistic data of the evaluation results based on problem set "selected_problems_C_no_io".  
-4. README: This file provides an overview of the project structure and instructions.
+4. README.md: This file.
 
 #### Instructions
 Our experiments can be performed on either windows or Linux.
@@ -68,7 +64,6 @@ Our experiments can be performed on either windows or Linux.
     - Python Version: 3.8+
     - Python Packages:
       - `requests`
-      - `selenium>=4.0`
       - `pandas`
       - `openai`
       - `zhipuai` 
