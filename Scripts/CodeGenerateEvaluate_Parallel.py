@@ -31,7 +31,7 @@ get_url = "https://open-v1.lgapi.cn/judge/result"
 start_time = 0
 
 EXEC_MODEL = 2  # model = 1表示每次运行时都会先清除掉之前的数据，model = 2表示每次运行时都会接着使用之前的数据
-start_problem = 'P1902'  # 开始评测的题目编号，若model = 2则从该题目开始评测 
+start_problem = 'P1001'  # 开始评测的题目编号，若model = 2则从该题目开始评测 
 
 # 获取problem_path目录下的题目列表
 def get_problems(problem_path):
@@ -78,8 +78,8 @@ def code_generation_client(problem, client, model_name):
 
 def code_generation_Llama(problem):
     print('--Llama start code generation')
-    os.environ["QIANFAN_ACCESS_KEY"] = "ALTAKluwRlasHuWuobYllgYNP1"
-    os.environ["QIANFAN_SECRET_KEY"] = "6b68289238cd458184951369573f6e01"
+    os.environ["QIANFAN_ACCESS_KEY"] = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    os.environ["QIANFAN_SECRET_KEY"] = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
     chat_comp = qianfan.ChatCompletion()
 
@@ -112,51 +112,51 @@ def code_generation_Llama(problem):
 
 # 调用DeepSeek进行代码生成
 def code_generation_deepseek(problem):
-    client = OpenAI(api_key="sk-af0f584d9df14565becade6c8999e4a1", base_url="https://api.deepseek.com")
+    client = OpenAI(api_key="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", base_url="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
     return code_generation_client(problem, client, "deepseek-chat")
 
 # 调用CodeGeeX进行代码生成
 def code_generation_codegeex(problem):
-    client = ZhipuAI(api_key="58ed93ced4261e6fbadda698aefc6b0f.HgJGdEeaCpaGCFbU")
+    client = ZhipuAI(api_key="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
     return code_generation_client(problem, client, "codegeex-4")
 
 # 调用qwen进行代码生成
 def code_generation_qwen(problem):
     client = OpenAI(
-        api_key="sk-93a1db5eacb543688353d9c03ba32170", 
-        base_url="https://dashscope.aliyuncs.com/compatible-mode/v1"
+        api_key="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+        base_url="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
     )
     return code_generation_client(problem, client, "qwen-coder-turbo-latest")
 
 # 调用kimi进行代码生成
 def code_generation_kimi(problem):
     client = OpenAI(
-        api_key="sk-rNaC5QyHsSMdqvnMCyZCRaKtkKw2IPfyUHjbemtRCCVkJdQ6", 
-        base_url="https://api.moonshot.cn/v1"
+        api_key="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+        base_url="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
     )
     return code_generation_client(problem, client, "moonshot-v1-8k")
 
 # 调用chatGPT进行代码生成
 def code_generation_chatgpt4o_mini(problem):
     client = OpenAI(
-        api_key="sk-oxyaDxaHzTN83bRBTlMVIAWZLZtEGFyNb3eRPDnAjwjteAzY", 
-        base_url="https://api.chatanywhere.tech/v1"
+        api_key="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+        base_url="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
     )    
     return code_generation_client(problem, client, "gpt-4o-mini")
 
 def code_generation_o1_mini(problem):    
-    key='sk-VhuJYLLbobwCB2LX8098351d1259491186BeA7C1Fc205761'
+    key='XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
     client = OpenAI(       
-        base_url="https://api.key77qiqi.cn/v1",
+        base_url="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
         api_key=key
     )    
     return code_generation_client(problem, client, "o1-mini")
 
 # 调用claude进行代码生成
 def code_generation_claude_3_5_sonnet(problem):    
-    key='sk-VhuJYLLbobwCB2LX8098351d1259491186BeA7C1Fc205761'
+    key='XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
     client = OpenAI(       
-        base_url="https://api.key77qiqi.cn/v1",
+        base_url="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
         api_key=key
     )    
     return code_generation_client(problem, client, "claude-3-5-sonnet-20240620")
@@ -190,7 +190,7 @@ def evaluate(pid, code):
 
     # 请求头
     headers = {
-        "Authorization": "Basic MDFqODRnZWVoYXh0c2Z5czNudHJzeWVyeXE6V1VQRlBIVlVrYzVEV3Vxcg==",
+        "Authorization": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
         "Content-Type": "application/json; charset=UTF-8",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0"
     }

@@ -10,8 +10,8 @@ import shutil
 import os
 
 startID = 1001   #起始问题ID
-endID   = 1010   #结束问题ID
-info_file = 'info.xlsx'   # 问题信息文件
+endID   = 100079   #结束问题ID
+info_file = 'info_problems.xlsx'   # 问题信息文件
 problem_path = 'problems' # 问题内容文件保存路径
 
 # 获取问题内容

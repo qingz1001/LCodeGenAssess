@@ -1,10 +1,9 @@
-#在路径“e:\problems”下有一个“Original”文件夹，里面存放着若干个文件，每个文件是一道题目，请在路径“e:\problems”下创建一个文件夹“C”，将“Original”文件夹中的每个文件都复制到“C”文件夹中，并且在每个文件里的第一行加上一句话“请生成下列问题的C代码：”。
 import os
 import shutil
 
 # 复制Original文件夹中的所有文件到C文件夹中
-original_path = "\\LCodeGenBench\\selected_problems" # 原始文件夹路径
-c_path = "\\LCodeGenBench\\selected_problems_C" # 目标文件夹路径
+original_path = "LCodeGenBench\\selected_problems" # 原始文件夹路径
+c_path = "LCodeGenBench\\selected_problems_C" # 目标文件夹路径
 
 # 如果目标文件夹存在，则删除
 if os.path.exists(c_path):
