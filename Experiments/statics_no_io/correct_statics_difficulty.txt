@@ -1,0 +1,11 @@
+\hline
+ & deepseek & codegeex & qwen & o1\_mini & claude\_3\_5\_sonnet\\\hline
+Entry-level & 66.0\% & 38.7\% & 32.7\% & 80.7\% & 66.0\%\\
+ Generalization- & 60.0\% & 23.3\% & 13.3\% & 70.0\% & 54.0\%\\
+ Generalization/Improvement- & 38.7\% & 12.7\% & 8.0\% & 64.7\% & 36.7\%\\
+ Generalization+/Improvement & 16.0\% & 2.7\% & 0.7\% & 41.3\% & 18.0\%\\
+ Improvement+/Provincial\_selection- & 5.3\% & 0.7\% & 0.0\% & 24.7\% & 5.3\%\\
+ Provincial\_selection/NOI- & 3.3\% & 0.0\% & 0.0\% & 9.3\% & 0.7\%\\
+ NOI/NOI+/CTSC & 0.0\% & 0.0\% & 0.0\% & 0.0\% & 0.0\%\\
+ \hline
+Total & 27.0\% & 11.2\% & 7.8\% & 41.5\% & 25.8\%\\ \hline
